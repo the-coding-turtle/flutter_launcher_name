@@ -23,6 +23,7 @@ flutter_launcher_name:
 
 ```
 
+If no `flutter_launcher_name` is specified or invalid, the default `name` from the `pubspec.yaml` file will be used.
 
 #### 2. Run the package
 
@@ -33,6 +34,19 @@ flutter pub get
 flutter pub run flutter_launcher_name:main
 ```
 
+### Command line parameters
+
+You can try to pass parameters directly after the command to modify your Flutter Launcher name 🌸
+
+```bash
+flutter pub run flutter_launcher_name:main "myNewAppName"
+```
+or
+```bash
+flutter pub run flutter_launcher_name:main myNewAppName
+```
+
+The commandline argument is used first, if it is absent, it will look in the `pubscpec.yaml` file.
 
 ## :mag: Attributes
 
